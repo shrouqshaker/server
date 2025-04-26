@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.removeUser = exports.getUserById = exports.addUser = void 0;
+const users = [];
+const addUser = (user) => users.push(user);
+exports.addUser = addUser;
+const getUserById = (id) => users[id];
+exports.getUserById = getUserById;
+const removeUser = (id) => users.splice(id, 1);
+exports.removeUser = removeUser;
